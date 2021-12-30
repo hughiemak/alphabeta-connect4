@@ -111,8 +111,6 @@ if __name__=="__main__":
 	parser.add_argument('--aifirst', action='store_true')
 	args = parser.parse_args()
 
-	print(args)
-
 	search_depth = args.depth
 	wins = 0
 	human_first = not args.aifirst
