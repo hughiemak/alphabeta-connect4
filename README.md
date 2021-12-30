@@ -16,14 +16,13 @@ The heuristic function is designed to capture the advantage of the last piece at
 Denote s to be the current state and s- to be the state before the last piece is inserted, and <img src="https://latex.codecogs.com/gif.latex?score_{s}^{blk}" /> the score of a block blk for state s, which is defined as
 
 <p align="center">
-<img src="https://latex.codecogs.com/gif.latex?score_{s}^{blk}=\begin{cases} \text{No. of MAX pcs if } blk \text{ has only MAX pcs} \\  \text{No. of MIN pcs if } blk \text{ has only MIN pcs} \\
-0 \text{ otherwise.} \end{cases}" /> 
+<img src="./img/score.png">
 </p>
 
 The heuristic value of a state s is then
 
 <p align="center">
-<img src="https://latex.codecogs.com/gif.latex?eval(s)=\sum_{blk:(r,c)\in blk} score_{s}^{blk} - \sum_{blk:(r,c)\in blk} score_{s^-}^{blk}  " /> 
+<img src="./img/eval.png" /> 
 </p>
 
 Hence, the output of the evaluation function can be seen as an estimation of the advantage of landing a piece at (r,c) at s-. The algorithm searches for moves that maximize this advantage. This heuristic function is quite effective. Even with a shallow search depth (<=3), the AI has decent performance.
