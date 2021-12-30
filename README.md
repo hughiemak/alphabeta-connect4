@@ -1,7 +1,7 @@
 
 # Minimax with Alpha-Beta Pruning for Connect 4
 
-Python Implementation of Connect 4 using alpha-beta pruning.
+Python implementation of a Connect 4 AI agent using alpha-beta pruning.
 
 # Execution
 
