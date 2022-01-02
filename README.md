@@ -5,7 +5,9 @@ Python implementation of a Connect 4 AI agent using alpha-beta pruning.
 
 # Execution
 
-```python minimax-connect4.py```
+```
+python minimax-connect4.py
+```
 
 By default, the user will be the first player and the search depth is 4. Use `--aifirst` to be the second player. Provide an integer in the command to adjust the search depth.
 
